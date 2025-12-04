@@ -24,14 +24,6 @@ def lambda_handler(event, context):
             'body': json.dumps("Bad request. Please provide the data.")
         }
 
-    # try:
-    #     data = json.loads(event['body'])
-    # except KeyError:
-    #     return {
-    #         'statusCode': 400,
-    #         'body': json.dumps("Bad request. Please provide the data.")
-    #     }
-
     # Get the table name from environment variable
     table_name = os.getenv('TABLE_NAME', 'Inventory')
 
