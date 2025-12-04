@@ -1,3 +1,4 @@
+---
 name: Deploy Website to S3 Bucket
 
 on:
